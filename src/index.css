@@ -7,6 +7,7 @@ body {
   padding: 20px;
   border-top: 8px double black;
   border-bottom: 8px double black;
+  box-sizing: border-box;
 }
 
 .showcase {
@@ -38,7 +39,7 @@ body {
 .section-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -80,9 +81,10 @@ a {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 90%;
   color: black;
 }
+
 
 .close {
   color: #aaaaaa;
@@ -98,7 +100,7 @@ a {
   cursor: pointer;
 }
 
-.about {
+.cursor{
   cursor: pointer;
   color: white;
 }
@@ -151,8 +153,7 @@ a {
   opacity: 0.9;
   border-radius: 5px;
   padding: 20px;
-  max-width: 700px;
-  min-width: 600px;
+  max-width: 90%;
   text-align: center;
   cursor: pointer;
 }
@@ -239,6 +240,14 @@ a {
   animation: spin 5s linear infinite;
 }
 
+@keyframes spin {
+  from { 
+    transform: rotateY(0deg); 
+  }
+  to { 
+    transform: rotateY(turn);
+  }
+}
 @media (min-width: 768px) {
   .section-container {
     width: 100%;
@@ -280,8 +289,50 @@ a {
 }
 
 .artwork-card__item {
-  width: calc(50% - 10px);
+  width: auto;
   margin-bottom: 20px;
+}
+
+/* Media Query for Tablets [768px-1224px] */
+@media screen and (min-width: 768px) {
+  .section-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content, .popup-content {
+    max-width: 700px;
+  }
+  .artwork-card__item {
+    width: calc(50% - 10px);
+  }
+}
+/* Media Query for Small Desktops [1224px-1824px] */
+@media screen and (min-width: 1224px) {
+  .section-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content, .popup-content {
+    max-width: 700px;
+  }
+
+  .artwork-card__item {
+    width: calc(50% - 10px);
+  }
+}
+/* Media Query for Large Desktops [1824px+] */
+@media screen and (min-width: 1824px) {
+  .section-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content, .popup-content {
+    max-width: 700px;
+  }
+
+  .artwork-card__item {
+    width: calc(50% - 10px);
+  }
 }
 
 .artwork-card__image {

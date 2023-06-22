@@ -118,7 +118,7 @@ const App = () => {
       <header className="py-5 px-10 bg-black flex justify-between items-center">
         <h1 className="text-white">Art search</h1>
         <nav>
-          <ul className="flex space-x-10 text-white">
+          <ul className="cursor flex space-x-10 text-white">
             <li onClick={() => setIsAboutOpen(true)}>About</li>
             <li onClick={() => setIsContactsOpen(true)}>Contact</li>
             <li onClick={() => setIsDarkMode(!isDarkMode)}>
