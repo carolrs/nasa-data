@@ -27,7 +27,7 @@ This is an Art Search app that allows users to search for artworks in the Rijksm
 
 To get started with the app, follow these steps:
 
-1. Clone the repository: `git clone <repository_url>`
+1. Clone the repository: `git clone <(https://github.com/carolrs/art-exhibition)>`
 2. Install the dependencies: `npm install`
 3. Set up the Rijksmuseum API key:
    - Sign up for a Rijksmuseum API key at [https://www.rijksmuseum.nl/en/api](https://www.rijksmuseum.nl/en/api)
