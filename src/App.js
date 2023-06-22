@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 
 const App = () => {
-  const[articles, setArticles] = useState([]);
+  const[art, setart] = useState([]);
   const [term, setTerm] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
@@ -14,7 +14,7 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [page, setPage] = useState(0);
   const [showScrollToTop, setShowScrollToTop] = useState(false);
-  const [showArticles, setShowArticles] = useState(false);
+  const [showart, setShowart] = useState(false);
   const [selectedArtwork, setSelectedArtwork] = useState(null);
   const [isArtworkModalOpen, setIsArtworkModalOpen] = useState(false);
   const [selectedArtworkGuide, setSelectedArtworkGuide] = useState(null);
@@ -32,7 +32,7 @@ const App = () => {
   
   useEffect(() => {
     setTimeout(() => {
-      setShowArticles(true);
+      setShowart(true);
     }, 1000);
   }, []);
 
@@ -77,7 +77,7 @@ const App = () => {
 
         );
         const artworks = await res.json();
-        setArticles(artworks.artObjects);
+        setart(artworks.artObjects);
         setIsLoading(false);
       } catch (error) {
         console.log(error);
@@ -92,19 +92,19 @@ const App = () => {
     const setDarkModeClass = (darkMode) => {
       if (darkMode) {
         document.body.classList.add("dark-mode");
-        document.querySelectorAll("article").forEach((article) => {
-          article.classList.add("bg-black");
-          article.classList.remove("bg-white");
-          article.classList.add("dark-mode-article");
-          article.querySelector("h2").classList.add("color-white");
+        document.querySelectorAll("art").forEach((art) => {
+          art.classList.add("bg-black");
+          art.classList.remove("bg-white");
+          art.classList.add("dark-mode-art");
+          art.querySelector("h2").classList.add("color-white");
         });
       } else {
         document.body.classList.remove("dark-mode");
-        document.querySelectorAll("article").forEach((article) => {
-          article.classList.remove("bg-black");
-          article.classList.add("bg-white");
-          article.classList.remove("dark-mode-article");
-          article.querySelector("h2").classList.remove("color-white");
+        document.querySelectorAll("art").forEach((art) => {
+          art.classList.remove("bg-black");
+          art.classList.add("bg-white");
+          art.classList.remove("dark-mode-art");
+          art.querySelector("h2").classList.remove("color-white");
         });
       }
     };
@@ -144,7 +144,7 @@ const App = () => {
       />
   
   <section className="section-container grid grid-cols-1 gap-10 px-5 pt-10 pb-20">
-  {articles.map((artwork, index) => {
+  {art.map((artwork, index) => {
     const {
       title,
       longTitle,
@@ -158,7 +158,7 @@ const App = () => {
       : "https://via.placeholder.com/150";
 
     return (
-      <article
+      <art
         key={objectNumber}
         className="bg-white py-10 px-5 rounded-lg lg:w-9/12 lg:mx-auto"
       >
@@ -195,7 +195,7 @@ const App = () => {
 
         <h2 className="font-bold text-3xl mb-5 lg:text-4xl">{title}</h2>
         <p className="text-lg">{longTitle}</p>
-      </article>
+      </art>
     );
   })}
 </section>

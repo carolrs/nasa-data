@@ -27,7 +27,7 @@ body {
   align-items: center;
 }
 
-.article {
+.art {
   border-bottom: 1px solid #ccc;
   padding: 15px 0;
   display: flex;
@@ -41,6 +41,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  cursor: pointer;
 }
 
 @keyframes moveArtwork {
