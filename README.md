@@ -2,7 +2,7 @@
 # Art Exhibition
 
 
-![Class System Design Drawing](docs/search-art.gif?raw=true "Art")
+![Class System Design Drawing](docs/art-museum.gif?raw=true "Art")
 
 
 This is an Art Search app that allows users to search for artworks in the Rijksmuseum collection. Users can search using any term and view the details of each artwork. The app also supports features like dark mode, scroll-to-top button, and more.
