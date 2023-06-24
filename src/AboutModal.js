@@ -1,13 +1,24 @@
 import React from 'react';
 
 const AboutModal = ({ onClose }) => (
-  <div className="modal" style={{ backgroundImage: "url('https://cdnm.westwing.com.br/glossary/uploads/br/2021/05/17215012/Arte-Renascentista.jpg')" }}>
-    <div className="modal-content">
-      <span className="close" onClick={onClose}>&times;</span>
-      <h2 className="font-bold text-2xl mb-4 lg: text:4xl">About this App</h2>
-      <p>This is an Art Exhibition app that allows users to search for artworks in Rijksmuseum using any search term. Users can also view the details of each artwork.</p>
+    <div className="about">
+        <h2 className="font-bold  text-2xl mb-4 lg:text-4xl">
+            About the App
+        </h2>
+        <div className="star-wars">
+            <p className="crawl">
+                This app is a visual representation of our solar system,
+                showcasing the orbits and rotations of the planets around the Sun.
+                It creates an engaging and interactive experience by animating the planets
+                in their respective orbits. Users can observe the planets' movements
+                and learn about their characteristics and features.
+                The app offers a visually captivating way to explore the solar system
+                and deepen one's understanding of planetary motion.
+                Whether for educational purposes or simply for enjoyment,
+                this app provides an immersive journey through our celestial neighborhood.
+            </p>
+        </div>
     </div>
-  </div>
 );
 
 export default AboutModal;
