@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
+import Modal from 'react-modal';
 import './Search.css';
+
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const NASA_API_KEY = 'IanNgx71Pof7nTkF1zhReAvuAtILZbxSwSQ0glJM';
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const openModal = (item) => {
+    setSelectedImage(item);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
 
   const searchImages = async () => {
     if (searchTerm === '') return;
@@ -39,10 +51,33 @@ const Search = () => {
           searchResults.map((item, index) => (
             <div className="card" key={index}>
               <h2>{item.data?.[0]?.title || 'Title Not Available'}</h2>
-              <img src={item.links?.[0]?.href} alt={item.data?.[0]?.title} />
+              <img
+                src={item.links?.[0]?.href}
+                alt={item.data?.[0]?.title}
+                onClick={() => openModal(item)}
+              />
             </div>
           ))
         )}
+        <Modal
+  isOpen={modalIsOpen}
+  onRequestClose={closeModal}
+  contentLabel="Image Modal"
+  style={{
+    content: {
+      backgroundColor: 'black',
+      color: 'white' 
+    },
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.75)' 
+    }
+  }}
+>
+  <img src={selectedImage?.links?.[0]?.href} alt={selectedImage?.data?.[0]?.title} />
+  <h2>{selectedImage?.data?.[0]?.title}</h2>
+  <p>{selectedImage?.data?.[0]?.description}</p>
+  <button onClick={closeModal} style={{color: 'black', backgroundColor: 'white'}}>Close</button>
+</Modal>
       </div>
     </div>
   );

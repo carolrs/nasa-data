@@ -4,8 +4,7 @@ import AboutModal from "./AboutModal";
 import APOD from "./APOD";
 import NEO from "./NEO";
 import SearchResults from "./SearchResults";
-
-import "./App.css"; // Importe o arquivo CSS
+import "./App.css"; 
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -16,7 +15,6 @@ const App = () => {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    // Você buscaria os dados aqui com base no searchTerm
   };
 
   return (
