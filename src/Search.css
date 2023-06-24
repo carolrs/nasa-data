@@ -1,0 +1,112 @@
+/* Adicione estas classes ao seu arquivo CSS existente */
+
+.search-container {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input input {
+  width: 443px;
+  padding: 10px;
+  border: 1px solid #0c0c0c;
+  border-radius: 14px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 20px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-results .card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-results .card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.search-results .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+/* Adicione essas classes ao seu arquivo CSS existente */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  margin: 20px;
+  align-items: center;
+}
+
+.card h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: rgb(251, 248, 248);
+}
+
+.card img {
+  width: 200%;
+  height: auto;
+  border-radius: 8px;
+}
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Content {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  border: 1px solid #a19b9b;
+  background: #0a0909;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  width: 80%;
+}
+
+.ReactModal__Content img {
+  max-width: 100%;
+  height: auto;
+}
