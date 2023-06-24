@@ -1,45 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #020202;
-  min-height: 100vh;
+.nav-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-bar li {
+  margin-right: 20px;
 }
 
-.frame {
-  border: 10px solid brown;
-  box-sizing: border-box;
+.nav-bar a {
+  text-decoration: none;
+  color: #f8f8f2;
+  font-size: 20px;
 }
 
+.app-container {
+  text-align: center;
+  margin-top: 100px;
+}
 
+.app-title {
+  font-size: 32px;
+  color: #f8f8f2;
+}
+
+/* Estilo para o formulário de pesquisa */
+/* .search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.search-input input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #f8f8f2;
+  font-size: 20px;
+  cursor: pointer;
+} */
+
+/* Estilo para os resultados da pesquisa */
+.search-results {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-results .instructions {
+  margin-bottom: 10px;
+  color: #6272a4;
+}
+
+.search-image {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+  box-shadow: 2px 2px 5px rgb(157, 157, 157);
+  margin-bottom: 50px;
+}
