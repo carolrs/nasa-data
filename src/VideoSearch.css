@@ -34,13 +34,17 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   width: 100%;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
 }
 
 .video-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1f1e1e;
+  background-color: #605555;
   padding: 20px;
   border-radius: 8px;
 }
@@ -65,7 +69,6 @@
   height: 100%;
 }
 
-/* CSS for the modal */
 .ReactModal__Overlay--video {
   position: fixed;
   top: 0;
