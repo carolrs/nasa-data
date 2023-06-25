@@ -46,7 +46,7 @@ const Search = () => {
       </div>
       <div className="card-container">
         {searchResults.length === 0 ? (
-          <p className="no-results">No results.</p>
+          <p className="no-results"></p>
         ) : (
           searchResults.map((item, index) => (
             <div className="card" key={index}>
@@ -76,11 +76,11 @@ const Search = () => {
   <img src={selectedImage?.links?.[0]?.href} alt={selectedImage?.data?.[0]?.title} />
   <h2>{selectedImage?.data?.[0]?.title}</h2>
   <p>{selectedImage?.data?.[0]?.description}</p>
-  <button onClick={closeModal} style={{color: 'black', backgroundColor: 'white'}}>Close</button>
+  <button className="close-modal" onClick={closeModal}>x</button>
 </Modal>
       </div>
     </div>
-  );
-};
+ );
+}
 
 export default Search;
