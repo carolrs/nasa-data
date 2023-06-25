@@ -10,13 +10,17 @@ const APOD = () => {
       .catch(error => console.log(error));
   }, []);
 
-  if (!imageData) return <div className='font-bold'>Loading...</div>;
+  if (!imageData) return <div className='loading-apod font-bold'>Loading...</div>;
 
   return (
-    <div className='font-bold '>
-      <h1 >{imageData.title}</h1>
+  
+    <div className='apod font-bold '>
+      <div className='title-astronomy'>
+          <h2 >Astronomy Picture of the Day</h2>
+          </div>
+      <h1 className= 'apod-title'>{imageData.title}</h1>
       <img src={imageData.url} alt={imageData.title} />
-      <p className='bg-white'>{imageData.explanation}</p>
+      <p className='apod-text bg-white'>{imageData.explanation}</p>
     </div>
   );
 }
