@@ -11,6 +11,8 @@
     "mongodb": "^5.6.0",
     "node-cron": "^3.0.2",
     "nodemailer": "^6.9.3",
+    "ol": "^7.4.0",
+    "ol-mapbox-style": "^10.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",

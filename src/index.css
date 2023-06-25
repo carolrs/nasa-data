@@ -36,22 +36,12 @@ video {
       top: 100vh;
   }
   70% {
-      top: -500vh; /* Adjust this value based on the length of your content */
+      top: -500vh; 
   }
   100% {
-      top: -500vh; /* Adjust this value based on the length of your content */
+      top: -500vh; 
   }
 }
-
-
-
-/* .no-results{
-  color: rgb(239, 238, 238);
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-} */
 
 .about {
   padding: 20px;
@@ -71,17 +61,10 @@ video {
   text-align: center;
 }
 
-.star-wars {
-  margin-top: 20px;
-}
-
 .star-wars .crawl {
   text-align: justify;
   color: #fdfcfc;
-  font-size: 20px;
-  
-
-  
+  font-size: 20px;  
 }
 
 .section {
@@ -185,7 +168,7 @@ header h2 {
 
 .container-child p, .container-child h4{
   display: inline;
-  background-color: #3B0A38;
+  background-color: #2a314b;
   max-height: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -246,3 +229,37 @@ header h2 {
   }
 }
 
+.apod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  margin-top: 50px;
+}
+.loading-apod{
+  color: #fdfcfc;
+}
+.apod-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  color: rgb(0, 0, 0);
+  font:bold 15px 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.apod-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(207, 221, 245);
+  display: flex;
+
+}
+.title-astronomy{
+  color: rgb(85, 170, 239);
+  display: flex;
+}

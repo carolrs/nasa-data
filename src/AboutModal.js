@@ -17,24 +17,24 @@ const AboutModal = ({ onClose }) => (
     <div className="star-wars">
       <Section title="Astronomy Picture of the Day (APOD)">
         <p className="crawl">
-          Our APOD feature allows you to discover a new celestial wonder every
+          APOD feature allows you to discover a new celestial wonder every
           day. Accompanied by detailed explanations, you can learn about our
           universe in a visually striking way.
         </p>
       </Section>
-      <Section title="Near Earth Objects (NEO)">
+      <Section title="EONET">
         <p className="crawl">
-          The NEO feature provides you with real-time data about objects that
-          have recently passed close to Earth. With information like the close
-          approach date and the estimated diameter, this feature helps you
-          comprehend the activity that occurs in our planet's vicinity.
+          The Earth Observatory Natural Event Tracker (EONET) is a repository of
+          metadata about natural events around the world. It's maintained by
+          NASA's Earth Science Division. EONET events are categorized into
+          several types such as wildfires, severe storms, floods, and more.
         </p>
       </Section>
-      <Section title="Image Search">
+      <Section title="Video Search">
         <p className="crawl">
-          Powerful search tool taps into NASA's vast image database, enabling
+          Powerful search tool taps into NASA's vast video database, enabling
           you to find stunning visuals of distant galaxies, nebulae, planets,
-          and more. Click on an image to view it in greater detail within a
+          and more. Click on a video to view it in greater detail within a
           dedicated modal.
         </p>
       </Section>
