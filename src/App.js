@@ -9,6 +9,7 @@ import logo from "./logo/nasa.png";
 import SearchVideos from "./SearchVideos";
 import Explore from "./Explorer";
 import Footer from "./Footer";
+import MarsWeather from "./MarsWeather";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -45,6 +46,9 @@ const App = () => {
           <li>
             <Link to="/explore">Explore</Link>
           </li>
+          <li>
+            <Link to="/mars">Mars</Link>
+          </li>
         </ul>
       </nav>
 
@@ -54,7 +58,7 @@ const App = () => {
         <Route path="/neo" element={<EventsMap />} />
         <Route path="/videos" element={<SearchVideos />} />
         <Route path="/explore" element={<Explore />} />
-
+        <Route path="/mars" element={<MarsWeather />} />
         <Route
   path="/"
   element={

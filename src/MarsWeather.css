@@ -1,0 +1,25 @@
+.mars-weather {
+  background-image: url('https://mars.nasa.gov/system/internal_resources/details/original/470_experience_insight_16x9_brighter.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
+  height: 517px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+.sol-card {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px; 
+  padding: 20px;
+  margin: 10px;
+  margin-right: auto;
+  width: 110px; 
+  height: auto; 
+  color: white; 
+  box-sizing: border-box;
+  font-size: 18px;
+}
