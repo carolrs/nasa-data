@@ -38,6 +38,13 @@ const AboutModal = ({ onClose }) => (
           dedicated modal.
         </p>
       </Section>
+      <Section title="Mars Weather">
+        <p className="crawl">
+          Mars Weather feature allows you to view the latest weather report from
+          the red planet. Data is provided by NASA's InSight: Mars Weather
+          Service API.
+          </p>
+          </Section>
     </div>
   </div>
 );
