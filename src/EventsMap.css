@@ -15,8 +15,29 @@
 }
 
 .events dt, .events dd {
-  margin-bottom: 10px; /* adjust the value as needed */
+  margin-bottom: 10px; 
 }
 .info{
   color: blue;
+} 
+.event-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+
+
+.event-table td a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.event-table td a:hover {
+  text-decoration: none;
 }
