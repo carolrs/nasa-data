@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AboutModal from "./AboutModal";
 import APOD from "./APOD";
-import NEO from "./NEO";
+import EventsMap from "./EventsMap";
 import SearchResults from "./SearchResults";
 import "./App.css";
 import logo from "./logo/nasa.png";
@@ -33,10 +33,10 @@ const App = () => {
             <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/apod">Image from the Day</Link>
+            <Link to="/apod">APOD</Link>
           </li>
           <li>
-            <Link to="/neo">Near Earth Objects</Link>
+            <Link to="/neo">Events</Link>
           </li>
           <li>
             <Link to="/videos">Videos</Link>
@@ -50,7 +50,7 @@ const App = () => {
       <Routes>
         <Route path="/about" element={<AboutModal />} />
         <Route path="/apod" element={<APOD />} />
-        <Route path="/neo" element={<NEO />} />
+        <Route path="/neo" element={<EventsMap />} />
         <Route path="/videos" element={<SearchVideos />} />
         <Route path="/explore" element={<Explore />} />
 
