@@ -17,6 +17,7 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  background: blue;
 }
 
 .star-wars {
@@ -44,10 +45,204 @@ video {
 
 
 
-.no-results{
+/* .no-results{
   color: rgb(239, 238, 238);
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
+} */
+
+.about {
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 800px;
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+  max-height: 90%;
 }
+
+.about h2 {
+  color: #333;
+  text-align: center;
+}
+
+.star-wars {
+  margin-top: 20px;
+}
+
+.star-wars .crawl {
+  text-align: justify;
+  color: #fdfcfc;
+  font-size: 20px;
+  
+
+  
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  cursor: pointer;
+  color: #119ddf;
+  font-size: 20px;
+}
+
+.section div {
+  margin-top: 10px;
+}
+.nasa-logo {
+  height: 50px;  
+  margin-right: 10px;  
+}
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: url("https://i.ibb.co/DftTf0W/banner.jpg") no-repeat;
+  background-origin: border-box;
+  background-size: 100%;
+  background-color: #080729;
+}
+
+#box-planet {
+  display: block;
+  text-align: center;
+}
+#box-planet img {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+}
+header h1, header h2 {
+  font-family: 'Righteous', cursive;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 15px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  font-weight: 20;
+}
+
+#arrow-down {
+  animation-name: arrow-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 25px;
+  height: 25px;
+  background: url("https://svgshare.com/i/D_b.svg");
+  position: relative;
+  margin: auto;
+  animation-timing-function: ease;
+
+}
+
+@keyframes arrow-down {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 50px;
+    opacity: 0;
+  }
+}
+.container-flex {
+  display: flex;
+  justify-content: center;
+  height: 510px;
+  margin-top: 50px;
+}
+
+.container-child {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+.container-child img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.70), 10px 10px 20px rgba(0, 0, 0, 0.40);
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+.container-child p, .container-child h4{
+  display: inline;
+  background-color: #3B0A38;
+  max-height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+
+#btn {
+  border-radius: 0;
+  border-style: none;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-top: 50px;
+  background-color: #3B0A38;
+}
+#btn:hover {
+  background-color: rgba(59, 10, 56, 0.753);
+}
+
+
+#text-whoarewe {
+  position: relative;
+  top: -270px;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+  text-align: right;
+  transform: scale(2.5);
+}
+
+@media (max-width: 800px){
+  #text-whoarewe {
+    display: none;
+  }
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  box-shadow: none;
+}
+.border-left {
+  border-left: 4px double rgba(255, 255, 255, 0.1);;
+  padding-left: 10px;
+}
+.read-more {
+  color: #119ddf;
+  cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+  .container-child {
+    width: 100%; 
+  }
+
+  .container-child p {
+    font-size: 10px; 
+  }
+}
+
