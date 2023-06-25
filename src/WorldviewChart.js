@@ -26,12 +26,12 @@ const WorldviewChart = () => {
         labels: eventLabels,
         datasets: [
           {
-            label: "Eventos",
+            label: "Events",
             data: eventValues,
             backgroundColor: "rgba(0, 123, 255, 0.5)",
             borderColor: "rgba(0, 123, 255, 1)",
             borderWidth: 2,
-            pointRadius: 0,
+            pointRadius: 3,
           },
         ],
       };
@@ -48,6 +48,9 @@ const WorldviewChart = () => {
             legend: {
               display: false,
             },
+            tooltip: {
+              enabled: true,
+            }
           },
           scales: {
             x: {
@@ -67,14 +70,12 @@ const WorldviewChart = () => {
   }, [events]);
 
   return (
- 
       <div className="worldview-chart">
         <div className="chart-card">
           <canvas ref={chartRef}></canvas>
         </div>
       </div>
     );
-  
 };
 
 export default WorldviewChart;
