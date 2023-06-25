@@ -8,6 +8,7 @@ import "./App.css";
 import logo from "./logo/nasa.png";
 import SearchVideos from "./SearchVideos";
 import Explore from "./Explorer";
+import Footer from "./Footer";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -90,13 +91,15 @@ const App = () => {
 
             </div>
             
+            
           )}
         </div>
       </section>
-    </div>
+      <Footer/>
+
+    </div>  
   }
 />
-
       </Routes>
     </Router>
   );
