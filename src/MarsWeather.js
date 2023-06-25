@@ -19,30 +19,22 @@ const MarsWeather = () => {
     .catch(error => console.log(error));
 }, []);
 
-
-
 return (
   <div className="mars-weather">
-    <h2>Weather at Elysium Planitia</h2>
     {weatherData && weatherData.sol_keys.length > 0 ? (
       weatherData.sol_keys.map((sol, index) => (
         <div key={sol}>
-            <div class="sol-card">
-
-          <p>Sol {sol}: {weatherData.temps[index] ? `${weatherData.temps[index]}°F` : 'Data not available'}</p>
-          
-        </div>
-        </div>
-        
+          <div className="sol-card">
+            <p>Sol {sol}: {weatherData.temps[index] ? `${weatherData.temps[index]}°F` : 'Data not available'}</p>      
+          </div>
+        </div>       
       ))
-
     ) : (
       <p>Data not currently available, please try again later.</p>
     )}
-  
   </div>
-  
-);  
-}
+);
+
+      }
 
 export default MarsWeather;
