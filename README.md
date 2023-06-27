@@ -1,6 +1,6 @@
 # Nasa (in progress)
 
-![Class System Design Drawing](docs/nasa-app.gif?raw=true "nasa")
+![Class System Design Drawing](docs/nasa-space.gif?raw=true "nasa")
 
 # NASA Space Explorer
 
