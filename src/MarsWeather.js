@@ -21,19 +21,22 @@ const MarsWeather = () => {
 
 return (
   <div className="mars-weather">
-    {weatherData && weatherData.sol_keys.length > 0 ? (
-      weatherData.sol_keys.map((sol, index) => (
-        <div key={sol}>
-          <div className="sol-card">
+    <h1 className="weather-title">Weather at Elysium Planitia</h1>
+    <h2>High:24	F	|	C Low:-139.8	F	|	C</h2>
+    <div className="sol-card-container">
+      {weatherData && weatherData.sol_keys.length > 0 ? (
+        weatherData.sol_keys.map((sol, index) => (
+          <div key={sol} className="sol-card">
             <p>Sol {sol}: {weatherData.temps[index] ? `${weatherData.temps[index]}°F` : 'Data not available'}</p>      
-          </div>
-        </div>       
-      ))
-    ) : (
-      <p>Data not currently available, please try again later.</p>
-    )}
+          </div>       
+        ))
+      ) : (
+        <p>Data not currently available, please try again later.</p>
+      )}
+    </div>
   </div>
 );
+
 
       }
 

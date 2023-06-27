@@ -1,5 +1,5 @@
  .mars-weather {
-  background-image: url('https://mars.nasa.gov/internal_resources/1340');
+  background-image: url('https://media.tenor.com/_fvtnMZODy0AAAAd/planet-mars-mars.gif');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -9,9 +9,11 @@
   align-items: center;
   padding: 20px;
   font-size: 20px;
-  opacity: 0.9;
+  opacity: 0.8;
+  flex-direction: column; 
   text-align: center;
   justify-content: center;
+
 } 
 
 .sol-card {
@@ -26,4 +28,14 @@
   box-sizing: border-box;
   font-size: 18px;
   border: 1px solid #000;
+}
+.sol-card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+.weather-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
