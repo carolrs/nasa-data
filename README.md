@@ -8,49 +8,63 @@ Welcome to NASA Space Explorer, a web application that allows you to explore var
 
 # Table of Contents
 
-About
-Installation
-Usage
-Features
-Technologies
-Contributing
-License
-About
+* About
+* Installation
+* Usage
+* Features
+* Technologies
+
 
 The NASA Space Explorer web application is built using React, a popular JavaScript library for building user interfaces. It utilizes the React Router library for navigation and routing within the application. The application provides a user-friendly interface to explore different sections related to space and astronomy.
 
+# Getting Started
+
+To set up the NASA Space Explorer application locally, execute the following steps:
+
+* Prerequisites:
+  
+Ensure that you have the latest version of Node.js and npm installed on your system. If not, you can download Node.js here and npm here.
+
 # Installation
+1. Clone the repository:
 
-To run the NASA Space Explorer application locally, follow these steps:
+```
+git clone https://github.com/carolrs/nasa-data
+```
 
-Clone the repository: git clone https://github.com/carolrs/nasa-data
-Navigate to the project directory: cd nasa-space-explorer
-Install the dependencies: npm install
-Start the development server: npm start
+2. Navigate to the project directory:
+
+```
+cd nasa-space-explorer
+```
+
+3. Install the dependencies:
+```
+npm install
+``` 
+
+4. Start the development server:
+```
+npm start
+```
+
 Open your web browser and visit http://localhost:3000 to access the application.
-Usage
 
-Upon launching the application, you will be presented with a navigation bar at the top, providing links to different sections of the application. The available sections include:
 
-- Home: This is the default landing page, which displays an interesting fact about space travel.
-- About: Clicking this link will open a modal providing information about various features available in the application, including the Astronomy Picture of the Day, Earth events, videos, and Mars weather.
-- APOD: This section displays the Astronomy Picture of the Day, along with detailed explanations, allowing you to discover new celestial wonders every day.
-- Events: Here, you can explore events happening on Earth categorized into different types, such as wildfires, storms, and floods, among others.
-- Videos: This feature enables you to search and view stunning visuals of distant galaxies, nebulae, planets, and more, from NASA's extensive video database.
-- Explore: In this section, you can find opportunities for space exploration and delve deeper into the mysteries of the universe.
-- Mars: Get the latest weather report from Mars using data provided by NASA's InSight: Mars Weather Service API.
-Features
+# Features
 
-# The NASA Space Explorer application offers the following features:
+The NASA Space Explorer application boasts the following features:
 
-Astronomy Picture of the Day (APOD): Discover a new celestial wonder every day, accompanied by detailed explanations.
-Earth Events: Explore natural events happening on Earth, categorized into different types.
-Video Search: Search and view stunning visuals from NASA's vast video database.
-Exploration Opportunities: Find opportunities for space exploration and learn about the mysteries of the universe.
-Mars Weather: Get the latest weather report from Mars using data provided by NASA's InSight: Mars Weather Service API.
-Technologies
+* Astronomy Picture of the Day (APOD): Encounter a new celestial wonder each day, accompanied by in-depth explanations.
+* Earth Events: Observe a variety of Earth events happening on Earth, systematically categorized into different types such as floods, volcanic activity, and more.
+* Video Search: Enjoy a selection of awe-inspiring visuals from NASA's vast video library.
+* Exploration Opportunities: Learn about space exploration opportunities and unravel the secrets of the universe.
+* Mars Weather: Stay updated with the latest Martian weather report, provided by NASA's InSight: Mars Weather Service API.
 
-# The NASA Space Explorer application is built using the following technologies and libraries:
 
-React: JavaScript library for building user interfaces.
-React Router: Library for navigation and routing within the application.
+# Built With
+
+The NASA Space Explorer application harnesses the power of the following technologies and libraries:
+
+* React: A JavaScript library for building user interfaces.
+* React Router: A library
