@@ -54,16 +54,19 @@ const SearchVideos = () => {
         </button>
       </div>
       <div className="card-container">
-        {searchResults.length === 0 ? (
-          <p className="no-results"></p>
-        ) : (
-          searchResults.map((item, index) => (
-            <div className="card" key={index}>
+      {searchResults.length === 0 ? (
+        <p className="no-results"></p>
+      ) : (
+        searchResults.map((item, index) => (
+          <div className="card" key={index}>
+            <video className="card-background-video" src={item.href} autoPlay loop muted />
+            <div className="card-content">
               <h2>{item.data?.[0]?.title || 'Title Not Available'}</h2>
               <p onClick={() => openModal(item)}>View Video</p>
             </div>
-          ))
-        )}
+          </div>
+        ))
+      )}
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -78,10 +81,13 @@ const SearchVideos = () => {
             }
           }}
         >
-          <iframe src={selectedVideo?.href} title={selectedVideo?.data?.[0]?.title} 
-           allow="autoplay; fullscreen" 
-           allowFullScreen 
-           />
+          <iframe 
+  src={selectedVideo?.href} 
+  title={selectedVideo?.data?.[0]?.title} 
+  allow="autoplay; fullscreen" 
+  allowFullScreen 
+  style={{ width: '100%', height: '500px' }}  
+/>
           <h2>{selectedVideo?.data?.[0]?.title}</h2>
           <p>{selectedVideo?.data?.[0]?.description}</p>
           <button className="close-modal" onClick={closeModal}>x</button>
